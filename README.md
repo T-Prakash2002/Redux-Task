@@ -8,6 +8,8 @@
      
 - This project aims to create a cart page where users can manage price cards with per-item price,per-item quantity, total quantity,and total amount using Redux for state management.
 
+- Deploying link: https://product-price-redux.netlify.app/
+
 ![alt text](./src/img/img1.png)
 
 ## Redux is really: 
