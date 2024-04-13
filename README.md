@@ -1,13 +1,14 @@
 # Redux-Task
 
 
-DAY 32
+## DAY 32
 
-- JSON data and create a cart page with per-item price, per-item quantity,
-Total quantity and total amount
+## Welcome to the Redux Price Card Management project! 
 
+     
+- This project aims to create a cart page where users can manage price cards with per-item price,per-item quantity, total quantity,and total amount using Redux for state management.
 
-    ![alt text](./src/img/img1.png)
+![alt text](./src/img/img1.png)
 
 ## Redux is really: 
 
