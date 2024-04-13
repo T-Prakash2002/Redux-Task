@@ -5,7 +5,7 @@ import { data } from '../data'
 const initialState={
         ProductList:[...data],
         ProductArr:[],
-        ProductTotalAmount:[]
+        ProductTotalAmount:0
 }
 
 const PriceSlice=createSlice({
@@ -24,9 +24,11 @@ const PriceSlice=createSlice({
                 ...filteredObj,
                 actions.payload
             ]
-            
-            console.log(actions.payload);
-            console.log(state.ProductArr);
+
+           let Total_ProductValueArr= state.ProductArr.map((item)=>item.Total_Amount)
+
+            state.ProductTotalAmount=Total_ProductValueArr.reduce((a,b)=>a+b,0)
+
 
         }
     }

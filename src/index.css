@@ -1,0 +1,26 @@
+
+
+.container{
+    max-width: fit-content;
+}
+.rod{
+    margin-top: 100px;
+}
+.card{
+    min-width: 450px;
+    max-width: 1000px;
+    height: 58rem;
+    box-shadow: 9px 0 10px rgba(61, 58, 58, 0.5);
+}
+.card img{
+    height: 450px;
+}
+input{
+    min-width: 50px;
+}
+
+.card:hover {
+    transform: scale(1.001);
+    box-shadow: 7px 0 10px rgba(238, 165, 7, 0.884);
+    z-index: 10;
+}

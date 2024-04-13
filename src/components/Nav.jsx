@@ -1,19 +1,23 @@
 import React from 'react'
-import { useSelector,useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 
 
 function Nav() {
 
-const dispatch=useDispatch();
 
-const {ProductList,ProductAmount,ProductTotalAmount}=useSelector((state)=>state.Products)
-
+const {ProductTotalAmount}=useSelector((state)=>state.Products)
 
   return (
     
-    <nav className="navbar navbar-expand-lg bg-warning-subtle fixed-top">
+    <nav className="navbar topnav navbar-expand-lg bg-warning-subtle fixed-top">
         <div className="container-fluid">
             <a className="navbar-brand" href="#">Products</a>
+
+
+            <a className="navbar-brand bg-danger fw-bolder rounded px-4" href="#">Total Amount: {ProductTotalAmount}</a>
+
+
+
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
             </button>
@@ -43,10 +47,6 @@ const {ProductList,ProductAmount,ProductTotalAmount}=useSelector((state)=>state.
                     alert("Your ordered confirmed!!")
                 }}>Proceed Pay</button>
             </ul>
-            
-            <div className="displayTotal">
-                {ProductTotalAmount}
-            </div>
             </div>
         </div>
         </nav>

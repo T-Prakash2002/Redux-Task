@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useState } from "react";
 import { useSelector,useDispatch } from 'react-redux'
 import { UpdateAmount } from "../Slice/PriceSlice";
@@ -20,7 +20,7 @@ const handleAmount=(quan)=>{
 
   setQuantity(quan);
     
-  dispatch(UpdateAmount({Quantity:quan,Amount:ProductList[index].price,Index:index}))
+  dispatch(UpdateAmount({Quantity:quan,Product_Amount:ProductList[index].price,Index:index,Total_Amount:quan*ProductList[index].price}))
     
     
 }
